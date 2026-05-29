@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人介绍 | 医患无障碍沟通系统</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans SC', sans-serif; }
+    .gradient-bg {
+      background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 50%, #14b8a6 100%);
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(14, 165, 233, 0.15);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- 顶部导航 -->
+  <nav class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+          </svg>
+        </div>
+        <h1 class="text-xl font-bold text-slate-800">我的个人主页</h1>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#about" class="text-sm text-slate-600 hover:text-cyan-600 transition-colors">关于我</a>
+        <a href="#project" class="text-sm text-slate-600 hover:text-cyan-600 transition-colors">项目介绍</a>
+        <a href="#demo" class="text-sm text-slate-600 hover:text-cyan-600 transition-colors">Demo视频</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 头部介绍 -->
+  <header class="gradient-bg text-white py-20">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <div class="w-32 h-32 bg-white/20 rounded-full mx-auto mb-6 flex items-center justify-center backdrop-blur-sm border-4 border-white/30">
+        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+        </svg>
+      </div>
+      <h1 class="text-4xl font-bold mb-4">你好，我是开发者</h1>
+      <p class="text-xl text-white/90 mb-6">前端工程师 | 全栈开发者 | 无障碍技术爱好者</p>
+      <div class="flex items-center justify-center gap-3">
+        <span class="px-4 py-2 bg-white/20 rounded-full text-sm backdrop-blur-sm">React</span>
+        <span class="px-4 py-2 bg-white/20 rounded-full text-sm backdrop-blur-sm">Node.js</span>
+        <span class="px-4 py-2 bg-white/20 rounded-full text-sm backdrop-blur-sm">SQLite</span>
+        <span class="px-4 py-2 bg-white/20 rounded-full text-sm backdrop-blur-sm">Web Speech API</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 关于我 -->
+  <section id="about" class="py-16 max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">关于我</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 card-hover">
+        <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+          <svg class="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+          </svg>
+          教育背景
+        </h3>
+        <div class="space-y-3">
+          <div class="flex items-start gap-3">
+            <div class="w-2 h-2 bg-cyan-500 rounded-full mt-2 flex-shrink-0"></div>
+            <div>
+              <p class="font-medium text-slate-800">XX大学 - 计算机科学与技术</p>
+              <p class="text-sm text-slate-500">本科 | 2022 - 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 card-hover">
+        <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+          <svg class="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          </svg>
+          技能特长
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-lg text-sm border border-cyan-100">React</span>
+          <span class="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-lg text-sm border border-cyan-100">Vue</span>
+          <span class="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-lg text-sm border border-cyan-100">Node.js</span>
+          <span class="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-lg text-sm border border-cyan-100">JavaScript</span>
+          <span class="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-lg text-sm border border-cyan-100">HTML/CSS</span>
+          <span class="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-lg text-sm border border-cyan-100">Tailwind CSS</span>
+          <span class="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-lg text-sm border border-cyan-100">SQLite</span>
+          <span class="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-lg text-sm border border-cyan-100">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 项目介绍 -->
+  <section id="project" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">项目介绍</h2>
+      
+      <div class="bg-gradient-to-br from-slate-50 to-cyan-50/30 rounded-3xl p-8 md:p-12 border border-slate-100">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 gradient-bg rounded-2xl flex items-center justify-center shadow-lg shadow-cyan-500/20">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-slate-800">医患无障碍沟通系统</h3>
+            <p class="text-slate-500">Medical Communication System</p>
+          </div>
+        </div>
+
+        <p class="text-slate-600 leading-relaxed mb-6">
+          这是一个面向听障人士的医疗问诊辅助平台。系统整合了<strong>Web Speech API 语音识别</strong>、
+          <strong>手语数字人展示</strong>、<strong>实时字幕翻译</strong>和<strong>SQLite 数据持久化</strong>等功能，
+          帮助医生与听障患者实现无障碍沟通。
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-4 mb-8">
+          <div class="bg-white rounded-xl p-5 border border-slate-100">
+            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+              <svg class="w-5 h-5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+              </svg>
+              语音转文字
+            </h4>
+            <p class="text-sm text-slate-500">医生语音实时转录为文字，支持快捷短语</p>
+          </div>
+          <div class="bg-white rounded-xl p-5 border border-slate-100">
+            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+              <svg class="w-5 h-5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              手语数字人
+            </h4>
+            <p class="text-sm text-slate-500">CSS 动画手语人，实时展示翻译状态</p>
+          </div>
+          <div class="bg-white rounded-xl p-5 border border-slate-100">
+            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+              <svg class="w-5 h-5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+              </svg>
+              数据持久化
+            </h4>
+            <p class="text-sm text-slate-500">SQLite 本地数据库存储，支持历史查询</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-sm">React 18</span>
+          <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-sm">Vite</span>
+          <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-sm">Tailwind CSS</span>
+          <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-sm">Node.js</span>
+          <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-sm">Express</span>
+          <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-sm">SQLite</span>
+          <span class="px-3 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-sm">Web Speech API</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo 视频 -->
+  <section id="demo" class="py-16 max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">项目 Demo</h2>
+    
+    <div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
+      <!-- 视频占位区 -->
+      <div class="aspect-video bg-slate-900 flex items-center justify-center relative">
+        <!-- TODO: 把你的录屏视频放到这里 -->
+        <!-- 方式1：本地视频文件 -->
+        <!-- <video controls class="w-full h-full">
+          <source src="./demo.mp4" type="video/mp4">
+          您的浏览器不支持视频播放
+        </video> -->
+        
+        <!-- 方式2：B站/YouTube 嵌入 -->
+        <!-- <iframe class="w-full h-full" src="https://player.bilibili.com/player.html?bvid=你的BV号" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe> -->
+        
+        <!-- 方式3：占位提示（录制好视频后替换上面的代码） -->
+        <div class="text-center text-white">
+          <svg class="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <p class="text-lg mb-2">Demo 视频</p>
+          <p class="text-sm opacity-60">请录制 2-3 分钟项目演示视频并替换此处</p>
+          <p class="text-xs opacity-40 mt-2">支持 MP4 本地文件 / B站 / YouTube 嵌入</p>
+        </div>
+      </div>
+      
+      <div class="p-6">
+        <h3 class="font-bold text-slate-800 mb-2">视频说明</h3>
+        <p class="text-sm text-slate-500 leading-relaxed">
+          本视频演示了医患无障碍沟通系统的核心功能，包括：医生端语音输入、实时字幕展示、
+          患者端手语数字人、对话记录保存、历史记录查询等完整流程。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-slate-800 text-white py-12">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <div class="flex items-center justify-center gap-6 mb-6">
+        <a href="https://github.com/你的用户名" target="_blank" class="text-slate-400 hover:text-white transition-colors flex items-center gap-2">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="mailto:your.email@example.com" class="text-slate-400 hover:text-white transition-colors flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          邮箱
+        </a>
+      </div>
+      <p class="text-slate-500 text-sm"> 2026 医患无障碍沟通系统 | 全栈开发实践项目</p>
+    </div>
+  </footer>
+
+</body>
+</html>
