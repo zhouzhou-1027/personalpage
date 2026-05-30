@@ -880,28 +880,45 @@
             font-size: 0.9rem;
             line-height: 1.5;
         }
-    <!-- Demo Video Section -->
-    <section id="demo" style="padding: 8rem 5%; position: relative; z-index: 1;">
-        <div class="container" style="text-align: center;">
-            <div class="section-tag" style="margin: 0 auto 1.5rem; width: fit-content;">
-                <i class="fas fa-video"></i>
-                项目演示
-            </div>
-            <h2 style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 800; margin-bottom: 1rem;">
-                医患无障碍沟通系统 <span class="gradient-text">Demo 视频</span>
-            </h2>
-            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2.5rem; line-height: 1.7;">
-                2-3 分钟完整功能演示：医生端语音输入、患者端手语数字人、实时字幕与历史记录存储。
-            </p>
-            
-            <div class="glass-card" style="max-width: 900px; margin: 0 auto; padding: 0; overflow: hidden; border-radius: 20px; background: #000;">
-                <video controls style="width: 100%; display: block;" poster="">
-                    <source src="./demo.mp4" type="video/mp4">
-                    您的浏览器不支持视频播放，请尝试刷新页面。
-                </video>
-            </div>
-        </div>
-    </section>
+
+        /* ===== Demo Video Section ===== */
+        #demo {
+            padding: 8rem 5%;
+            position: relative;
+            z-index: 1;
+        }
+
+        #demo .container {
+            text-align: center;
+        }
+
+        #demo h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        #demo p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+        }
+
+        .video-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0;
+            overflow: hidden;
+            border-radius: 20px;
+            background: #000;
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            display: block;
+        }
+
         /* ===== Footer ===== */
         footer {
             padding: 4rem 5% 2rem;
@@ -1231,23 +1248,46 @@
         </div>
     </section>
 
+    <!-- Demo Video Section -->
+    <section id="demo">
+        <div class="container">
+            <div class="section-tag" style="margin: 0 auto 1.5rem; width: fit-content;">
+                <i class="fas fa-video"></i>
+                项目演示
+            </div>
+            <h2>
+                医患无障碍沟通系统 <span class="gradient-text">Demo 视频</span>
+            </h2>
+            <p>
+                2-3 分钟完整功能演示：医生端语音输入、患者端手语数字人、实时字幕与历史记录存储。
+            </p>
+            
+            <div class="glass-card video-wrapper">
+                <video controls poster="">
+                    <source src="./demo.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放，请尝试刷新页面。
+                </video>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <<footer>
-    <div class="footer-content">
-        <div class="footer-logo">ZQ.ZHOU</div>
-        <p class="footer-desc">
-            计算机科学与技术 · 上海大学<br>
-            期待加入张闻华老师的项目团队，为听障人群的就医体验贡献一份力量。
-        </p>
-        <div class="social-links">
-            <a href="mailto:17621102792@163.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/zhouzhou-1027" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">ZQ.ZHOU</div>
+            <p class="footer-desc">
+                计算机科学与技术 · 上海大学<br>
+                期待加入张闻华老师的项目团队，为听障人群的就医体验贡献一份力量。
+            </p>
+            <div class="social-links">
+                <a href="mailto:17621102792@163.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/zhouzhou-1027" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="copyright">
+                 周恩琪 · 个人介绍页 · 基于增强现实与手语数字人的智能医患无障碍沟通系统意向申请
+            </div>
         </div>
-        <div class="copyright">
-             周恩琪 · 个人介绍页 · 基于增强现实与手语数字人的智能医患无障碍沟通系统意向申请
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <script>
         // ===== Particle Universe =====
